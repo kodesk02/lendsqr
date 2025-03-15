@@ -1,10 +1,9 @@
 import React from 'react'
-import Signup from './signup/page'
 
 const page = () => {
   return (
-    <div>
-      <Signup/>
+      <div className='text-red-400'>
+          User 2
     </div>
   )
 }

@@ -1,0 +1,474 @@
+{
+    "cards": [
+        {
+            "id": "98Ms672",
+            "title": "Users",
+            "icon": "/icons/users.svg",
+            "count": 2453
+        },
+        {
+            "id": "08Es672",
+            "title": "Active Users",
+            "icon": "/icons/active.svg",
+            "count": 2453
+        },
+        {
+            "id": "58Ys672",
+            "title": "Users with Loans",
+            "icon": "/icons/loan.svg",
+            "count": 12453
+        },
+        {
+            "id": "48Ts672",
+            "title": "Users with Savings",
+            "icon": "/icons/savings.svg",
+            "count": 102453
+        }
+    ],
+    "users": [
+        {
+            "details": {
+                "id": "LSkFf587g91",
+                "organization": "Lendsqr",
+                "username": "Adedeji",
+                "email": "adedeji@lendsqr.com",
+                "phonenumber": "09096641851",
+                "datejoined": "2020-05-15T10:00:00Z",
+                "status": "Inactive",
+                "salary": "200000",
+                "bank": "Providus Bank",
+                "bvn": "07060780922",
+                "gender": "Female",
+                "maritialstatus": "Single",
+                "children": 0,
+                "typeofresidence": "Parent’s Apartment",
+                "education": [
+                    {
+                        "levelofeducation": "B.Sc",
+                        "employmentstatus": "Employed",
+                        "sector": "FinTech",
+                        "duration": "2 years",
+                        "officialemail": "grace@lendsqr.com",
+                        "monthlyincome": "400000",
+                        "loanrepayment": "40,000"
+                    }
+                ],
+                "socials": [
+                    {
+                        "twitter": "@grace_effiom",
+                        "facebook": "Grace Effiom",
+                        "instagram": "@grace_effiom"
+                    }
+                ],
+                "guarantor": [
+                    {
+                        "fullname": "Debby Ogana",
+                        "phone": "07060780922",
+                        "email": "debby@gmail.com",
+                        "relationship": "Sister"
+                    }
+                ]
+            }
+        },
+          {
+            "details": {
+                "id": "LSwFf587g99",
+                "organization": "Irorun",
+                "username": "Debby Ogana",
+                "email": "debby2@irorun.com",
+                "phonenumber": "08160780928",
+                "datejoined": "2020-04-05T10:00:00Z",
+                "status": "Pending",
+                "salary": "200000",
+                "bank": "Providus Bank",
+                "bvn": "07060780922",
+                "gender": "Female",
+                "maritialstatus": "Single",
+                "children": 0,
+                "typeofresidence": "Parent’s Apartment",
+                "education": [
+                    {
+                        "levelofeducation": "B.Sc",
+                        "employmentstatus": "Employed",
+                        "sector": "FinTech",
+                        "duration": "2 years",
+                        "officialemail": "grace@lendsqr.com",
+                        "monthlyincome": "400000",
+                        "loanrepayment": "40,000"
+                    }
+                ],
+                "socials": [
+                    {
+                        "twitter": "@grace_effiom",
+                        "facebook": "Grace Effiom",
+                        "instagram": "@grace_effiom"
+                    }
+                ],
+                "guarantor": [
+                    {
+                        "fullname": "Debby Ogana",
+                        "phone": "07060780922",
+                        "email": "debby@gmail.com",
+                        "relationship": "Sister"
+                    }
+                ]
+            }
+        },
+          {
+            "details": {
+                "id": "L0lFf587g98",
+                "organization": "Lendsqr",
+                "username": "Grace Effiom",
+                "email": "grace@lendstar.com",
+                "phonenumber": "07060780922",
+                "datejoined": "2020-05-15T10:00:00Z",
+                "status": "Blacklisted",
+                "salary": "200000",
+                "bank": "Providus Bank",
+                "bvn": "07060780922",
+                "gender": "Female",
+                "maritialstatus": "Single",
+                "children": 0,
+                "typeofresidence": "Parent’s Apartment",
+                "education": [
+                    {
+                        "levelofeducation": "B.Sc",
+                        "employmentstatus": "Employed",
+                        "sector": "FinTech",
+                        "duration": "2 years",
+                        "officialemail": "grace@lendsqr.com",
+                        "monthlyincome": "400000",
+                        "loanrepayment": "40,000"
+                    }
+                ],
+                "socials": [
+                    {
+                        "twitter": "@grace_effiom",
+                        "facebook": "Grace Effiom",
+                        "instagram": "@grace_effiom"
+                    }
+                ],
+                "guarantor": [
+                    {
+                        "fullname": "Debby Ogana",
+                        "phone": "07060780922",
+                        "email": "debby@gmail.com",
+                        "relationship": "Sister"
+                    }
+                ]
+            }
+        },
+          {
+            "details": {
+                "id": "LSgFf587k97",
+                "organization": "Lendsqr",
+                "username": "Tosin Dokunmu",
+                "email": "tosin@lendsqr.com",
+                "phonenumber": "07003309226",
+                "datejoined": "2020-05-15T10:00:00Z",
+                "status": "Active",
+                "salary": "200000",
+                "bank": "Providus Bank",
+                "phone": "",
+                "bvn": "07060780922",
+                "gender": "Female",
+                "maritialstatus": "Single",
+                "children": 0,
+                "typeofresidence": "Parent’s Apartment",
+                "education": [
+                    {
+                        "levelofeducation": "B.Sc",
+                        "employmentstatus": "Employed",
+                        "sector": "FinTech",
+                        "duration": "2 years",
+                        "officialemail": "grace@lendsqr.com",
+                        "monthlyincome": "400000",
+                        "loanrepayment": "40,000"
+                    }
+                ],
+                "socials": [
+                    {
+                        "twitter": "@grace_effiom",
+                        "facebook": "Grace Effiom",
+                        "instagram": "@grace_effiom"
+                    }
+                ],
+                "guarantor": [
+                    {
+                        "fullname": "Debby Ogana",
+                        "phone": "07060780922",
+                        "email": "debby@gmail.com",
+                        "relationship": "Sister"
+                    }
+                ]
+            }
+        },
+          {
+             "details": {
+                "id": "L9lFf587g98",
+                "organization": "Lendsqr",
+                "username": "Grace Effiom",
+                "email": "grace@lendstar.com",
+                "phonenumber": "07060780922",
+                "datejoined": "2020-05-15T10:00:00Z",
+                "status": "Blacklisted",
+                "salary": "200000",
+                "bank": "Providus Bank",
+                "bvn": "07060780922",
+                "gender": "Female",
+                "maritialstatus": "Single",
+                "children": 0,
+                "typeofresidence": "Parent’s Apartment",
+                "education": [
+                    {
+                        "levelofeducation": "B.Sc",
+                        "employmentstatus": "Employed",
+                        "sector": "FinTech",
+                        "duration": "2 years",
+                        "officialemail": "grace@lendsqr.com",
+                        "monthlyincome": "400000",
+                        "loanrepayment": "40,000"
+                    }
+                ],
+                "socials": [
+                    {
+                        "twitter": "@grace_effiom",
+                        "facebook": "Grace Effiom",
+                        "instagram": "@grace_effiom"
+                    }
+                ],
+                "guarantor": [
+                    {
+                        "fullname": "Debby Ogana",
+                        "phone": "07060780922",
+                        "email": "debby@gmail.com",
+                        "relationship": "Sister"
+                    }
+                ]
+            }
+        },
+          {
+           "details": {
+                "id": "LSzFf587g97",
+                "organization": "Lendsqr",
+                "username": "Tosin Dokunmu",
+                "email": "tosin@lendsqr.com",
+                "phonenumber": "07003309226",
+                "datejoined": "2020-05-15T10:00:00Z",
+                "status": "Active",
+                "salary": "200000",
+                "bank": "Providus Bank",
+                "phone": "",
+                "bvn": "07060780922",
+                "gender": "Female",
+                "maritialstatus": "Single",
+                "children": 0,
+                "typeofresidence": "Parent’s Apartment",
+                "education": [
+                    {
+                        "levelofeducation": "B.Sc",
+                        "employmentstatus": "Employed",
+                        "sector": "FinTech",
+                        "duration": "2 years",
+                        "officialemail": "grace@lendsqr.com",
+                        "monthlyincome": "400000",
+                        "loanrepayment": "40,000"
+                    }
+                ],
+                "socials": [
+                    {
+                        "twitter": "@grace_effiom",
+                        "facebook": "Grace Effiom",
+                        "instagram": "@grace_effiom"
+                    }
+                ],
+                "guarantor": [
+                    {
+                        "fullname": "Debby Ogana",
+                        "phone": "07060780922",
+                        "email": "debby@gmail.com",
+                        "relationship": "Sister"
+                    }
+                ]
+            }
+        },
+          {
+             "details": {
+                "id": "L3lFf587g98",
+                "organization": "Lendsqr",
+                "username": "Grace Effiom",
+                "email": "grace@lendstar.com",
+                "phonenumber": "07060780922",
+                "datejoined": "2020-05-15T10:00:00Z",
+                "status": "Blacklisted",
+                "salary": "200000",
+                "bank": "Providus Bank",
+                "bvn": "07060780922",
+                "gender": "Female",
+                "maritialstatus": "Single",
+                "children": 0,
+                "typeofresidence": "Parent’s Apartment",
+                "education": [
+                    {
+                        "levelofeducation": "B.Sc",
+                        "employmentstatus": "Employed",
+                        "sector": "FinTech",
+                        "duration": "2 years",
+                        "officialemail": "grace@lendsqr.com",
+                        "monthlyincome": "400000",
+                        "loanrepayment": "40,000"
+                    }
+                ],
+                "socials": [
+                    {
+                        "twitter": "@grace_effiom",
+                        "facebook": "Grace Effiom",
+                        "instagram": "@grace_effiom"
+                    }
+                ],
+                "guarantor": [
+                    {
+                        "fullname": "Debby Ogana",
+                        "phone": "07060780922",
+                        "email": "debby@gmail.com",
+                        "relationship": "Sister"
+                    }
+                ]
+            }
+        },
+          {
+           "details": {
+                "id": "LSfFf587g97",
+                "organization": "Lendsqr",
+                "username": "Tosin Dokunmu",
+                "email": "tosin@lendsqr.com",
+                "phonenumber": "07003309226",
+                "datejoined": "2020-05-15T10:00:00Z",
+                "status": "Inactive",
+                "salary": "200000",
+                "bank": "Providus Bank",
+                "phone": "",
+                "bvn": "07060780922",
+                "gender": "Female",
+                "maritialstatus": "Single",
+                "children": 0,
+                "typeofresidence": "Parent’s Apartment",
+                "education": [
+                    {
+                        "levelofeducation": "B.Sc",
+                        "employmentstatus": "Employed",
+                        "sector": "FinTech",
+                        "duration": "2 years",
+                        "officialemail": "grace@lendsqr.com",
+                        "monthlyincome": "400000",
+                        "loanrepayment": "40,000"
+                    }
+                ],
+                "socials": [
+                    {
+                        "twitter": "@grace_effiom",
+                        "facebook": "Grace Effiom",
+                        "instagram": "@grace_effiom"
+                    }
+                ],
+                "guarantor": [
+                    {
+                        "fullname": "Debby Ogana",
+                        "phone": "07060780922",
+                        "email": "debby@gmail.com",
+                        "relationship": "Sister"
+                    }
+                ]
+            }
+        },
+          {
+             "details": {
+                "id": "L5lFf587g98",
+                "organization": "Lendsqr",
+                "username": "Grace Effiom",
+                "email": "grace@lendstar.com",
+                "phonenumber": "07060780922",
+                "datejoined": "2020-05-15T10:00:00Z",
+                "status": "Blacklisted",
+                "salary": "200000",
+                "bank": "Providus Bank",
+                "bvn": "07060780922",
+                "gender": "Female",
+                "maritialstatus": "Single",
+                "children": 0,
+                "typeofresidence": "Parent’s Apartment",
+                "education": [
+                    {
+                        "levelofeducation": "B.Sc",
+                        "employmentstatus": "Employed",
+                        "sector": "FinTech",
+                        "duration": "2 years",
+                        "officialemail": "grace@lendsqr.com",
+                        "monthlyincome": "400000",
+                        "loanrepayment": "40,000"
+                    }
+                ],
+                "socials": [
+                    {
+                        "twitter": "@grace_effiom",
+                        "facebook": "Grace Effiom",
+                        "instagram": "@grace_effiom"
+                    }
+                ],
+                "guarantor": [
+                    {
+                        "fullname": "Debby Ogana",
+                        "phone": "07060780922",
+                        "email": "debby@gmail.com",
+                        "relationship": "Sister"
+                    }
+                ]
+            }
+        },
+          {
+           "details": {
+                "id": "LSgkf587g97",
+                "organization": "Lendsqr",
+                "username": "Tosin Dokunmu",
+                "email": "tosin@lendsqr.com",
+                "phonenumber": "07003309226",
+                "datejoined": "2020-05-15T10:00:00Z",
+                "status": "Inactive",
+                "salary": "200000",
+                "bank": "Providus Bank",
+                "phone": "",
+                "bvn": "07060780922",
+                "gender": "Female",
+                "maritialstatus": "Single",
+                "children": 0,
+                "typeofresidence": "Parent’s Apartment",
+                "education": [
+                    {
+                        "levelofeducation": "B.Sc",
+                        "employmentstatus": "Employed",
+                        "sector": "FinTech",
+                        "duration": "2 years",
+                        "officialemail": "grace@lendsqr.com",
+                        "monthlyincome": "400000",
+                        "loanrepayment": "40,000"
+                    }
+                ],
+                "socials": [
+                    {
+                        "twitter": "@grace_effiom",
+                        "facebook": "Grace Effiom",
+                        "instagram": "@grace_effiom"
+                    }
+                ],
+                "guarantor": [
+                    {
+                        "fullname": "Debby Ogana",
+                        "phone": "07060780922",
+                        "email": "debby@gmail.com",
+                        "relationship": "Sister"
+                    }
+                ]
+            }
+        }
+    ]
+}

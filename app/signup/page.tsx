@@ -71,6 +71,7 @@ const Signup = () => {
             onClick={() => handleSubmit}
             className="font-semibold tracking-wider"
           />
+          <Link href={"/app/(dashboard)/page.tsx"}>Open</Link>
         </div>
       </div>
     </div>

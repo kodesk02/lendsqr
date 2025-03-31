@@ -140,7 +140,7 @@ const Sidebar = () => {
                 {top.title}
               </span>
               {top.subMenu.map((list, idx) => (
-                <ul className="space-y-2 hover:border-l-4 hover:border-[var(--primary)] hover:bg-[var(--secondary)] " key={idx}>
+                <ul className="space-y-2 hover:border-l-4 hover:text-[var(--royalblue)] hover:border-[var(--primary)] hover:bg-[var(--secondary)] " key={idx}>
                   <div className="flex gap-4 p-4">
                     <Image
                       src={list.icon}
@@ -148,7 +148,7 @@ const Sidebar = () => {
                       width={20}
                       height={20}
                     />
-                    <h3>{list.title}</h3>
+                    <h3 className="text-[var(--gray)]">{list.title}</h3>
                   </div>
                 </ul>
               ))}

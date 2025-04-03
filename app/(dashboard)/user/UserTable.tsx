@@ -1,8 +1,29 @@
 "use client";
 
-import { User, UsersResponse } from "@/types/user";
+import { User } from "@/types/user";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Pagination from "@/components/Pagination";
+import Link from "next/link";
+import DropdownMenu from "@/components/Dropdown";
+
+const dropdownOptions = [
+  {
+    icon: "/icons/view.svg",
+    text: "View Details",
+    href: "",
+  },
+  {
+    icon: "/icons/blacklist.svg",
+    text: "Blacklist User",
+    href: "",
+  },
+  {
+    icon: "/icons/activate.svg",
+    text: "Activate User",
+    href: "",
+  },
+];
 
 const tableHeaders = [
   "Organization",
@@ -24,6 +45,11 @@ const statusClass: Record<string, string> = {
 const UserTable = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(5);
+  const totalItems = users.length;
+
+  const [openDropdownId, setOpenDropdownId] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchUsers = async () => {
@@ -39,58 +65,106 @@ const UserTable = () => {
     fetchUsers();
   }, []);
 
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const currentItems = users.slice(startIndex, startIndex + itemsPerPage);
+
+  const handlePageChange = (page: number, perPage: number) => {
+    setCurrentPage(page);
+    setItemsPerPage(perPage);
+  };
+
+  const handleDropdownToggle = (id: string) => {
+    setOpenDropdownId((prev) => (prev === id ? null : id));
+  };
+
+  const closeDropdown = () => {
+    setOpenDropdownId(null); 
+  };
+
   return (
-    <div className="overflow-x-hidden bg-white p-2 pt-6 text-[var(--gray)]">
-      <table className="w-full shadow-lg">
-        <thead className="text-nowrap">
-          <tr>
-            {tableHeaders.map((header) => (
-              <th key={header} className="p-4">
-                <div className="flex items-center gap-2">
-                  {header.toUpperCase()}
-                  <Image
-                    src={"/icons/filter-results-button.svg"}
-                    alt={`filter icon`}
-                    width={16}
-                    height={16}
-                  />
-                </div>
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {users.map((user, index) => (
-            <>
-              <tr
-                key={user.details.id}
-                className="hover:bg-gray-50 p-5 space-y-4"
-              >
-                <td className="p-4">{user?.details.organization}</td>
-                <td className="p-4">{user?.details.username}</td>
-                <td className="p-4">{user?.details.email}</td>
-                <td className="p-4">{user?.details.phonenumber}</td>
-                <td className="p-4 text-nowrap">
-                  {new Date(user?.details.datejoined).toDateString()}
-                </td>
-                <td className="p-4">
-                  <span className={`px-4 py-2 rounded-full ${statusClass[user?.details.status]}`}>
-                    {user?.details.status}
-                  </span>
-                </td>
+    <div className="relative">
+      <div className="overflow-x-auto bg-white p-2 pt-6 text-[var(--gray)]">
+        <table className="w-full shadow-lg">
+          <div className="p-6">
+            <thead className="text-nowrap">
+              <tr>
+                {tableHeaders.map((header) => (
+                  <th key={header} className="p-4">
+                    <div className="flex items-center gap-2">
+                      {header.toUpperCase()}
+                      <Image
+                        src={"/icons/filter-results-button.svg"}
+                        alt={`filter icon`}
+                        width={16}
+                        height={16}
+                      />
+                    </div>
+                  </th>
+                ))}
               </tr>
-              {index !== users.length - 1 && (
-                       <tr>
-                       <td colSpan={tableHeaders.length}>
-                         <hr className="border-gray-300" />
-                       </td>
-                     </tr>
-              )}
-       
-            </>
-          ))}
-        </tbody>
-      </table>
+            </thead>
+            <tbody>
+              {currentItems.map((user, index) => (
+                <React.Fragment key={user.details.id}>
+                  <tr className="hover:bg-gray-50 p-5 space-y-4">
+                    <td className="p-4">{user?.details.organization}</td>
+                    <td className="p-4 text-nowrap">{user?.details.username}</td>
+                    <td className="p-4">{user?.details.email}</td>
+                    <td className="p-4">{user?.details.phonenumber}</td>
+                    <td className="p-4 text-nowrap">
+                      {new Date(user?.details.datejoined).toDateString()}
+                    </td>
+                    <td className="p-4">
+                      <span
+                        className={`px-4 py-2 rounded-full ${
+                          statusClass[user?.details.status]
+                        }`}
+                      >
+                        {user?.details.status}
+                      </span>
+                    </td>
+                    <td>
+                      <button
+                        onClick={() => handleDropdownToggle(user.details.id)}
+                      >
+                        <Image
+                          src={"/icons/list.svg"}
+                          alt="dropdown"
+                          width={3.33}
+                          height={14.44}
+                          className="cursor-pointer"
+                        />
+                      </button>
+                      <DropdownMenu
+                        options={dropdownOptions}
+                        isOpen={openDropdownId === user.details.id}
+                        onClose={closeDropdown} 
+                      />
+                    </td>
+                  </tr>
+
+                  {index !== currentItems.length - 1 && (
+                    <tr>
+                      <td colSpan={tableHeaders.length}>
+                        <hr className="border-gray-300" />
+                      </td>
+                    </tr>
+                  )}
+                </React.Fragment>
+              ))}
+            </tbody>
+          </div>
+        </table>
+      </div>
+
+      <div>
+        <Pagination
+          totalItems={totalItems}
+          itemsPerPage={itemsPerPage}
+          onPageChange={handlePageChange}
+          className={"sticky"}
+        />
+      </div>
     </div>
   );
 };

@@ -95,7 +95,7 @@ const UserTable = () => {
             <thead className="text-nowrap">
               <tr>
                 {tableHeaders.map((header) => (
-                  <th key={header} className="p-4">z
+                  <th key={header} className="p-4">
                     <div className="flex items-center gap-2">
                       {header.toUpperCase()}
                       <Image
@@ -108,7 +108,7 @@ const UserTable = () => {
                       {isDropdownOpen && (
                         <FormDropdown
                           isOpen={isDropdownOpen}
-                          onClose={closeDropdown}
+                          onClose={closeFormDropdown}
                         />
                       )}
                     </div>

@@ -4,7 +4,7 @@ import UserTable from './user/UserTable'
 const page = () => {
   return (
       <div>
-          <UserTable/>
+          Dashboard
     </div>
   )
 }

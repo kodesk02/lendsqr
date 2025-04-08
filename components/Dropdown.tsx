@@ -9,7 +9,7 @@ interface DropdownOption {
 
 interface DropdownMenuProps {
   options: DropdownOption[];
-  isOpen: boolean;
+  isOpen?: boolean;
   onClose: () => void; // Add a function to close the dropdown
 }
 

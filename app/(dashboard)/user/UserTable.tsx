@@ -6,6 +6,7 @@ import Image from "next/image";
 import Pagination from "@/components/Pagination";
 import Link from "next/link";
 import DropdownMenu from "@/components/Dropdown";
+import FormDropdown from "@/components/FormDropdown";
 
 const dropdownOptions = [
   {
@@ -48,6 +49,7 @@ const UserTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(5);
   const totalItems = users.length;
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const [openDropdownId, setOpenDropdownId] = useState<string | null>(null);
 
@@ -78,8 +80,12 @@ const UserTable = () => {
   };
 
   const closeDropdown = () => {
-    setOpenDropdownId(null); 
+    setOpenDropdownId(null);
   };
+
+  const closeFormDropdown = () => {
+    setIsDropdownOpen(false)
+  }
 
   return (
     <div className="relative">
@@ -89,7 +95,7 @@ const UserTable = () => {
             <thead className="text-nowrap">
               <tr>
                 {tableHeaders.map((header) => (
-                  <th key={header} className="p-4">
+                  <th key={header} className="p-4">z
                     <div className="flex items-center gap-2">
                       {header.toUpperCase()}
                       <Image
@@ -97,7 +103,14 @@ const UserTable = () => {
                         alt={`filter icon`}
                         width={16}
                         height={16}
+                        onClick={() => setIsDropdownOpen((prev) => !prev)}
                       />
+                      {isDropdownOpen && (
+                        <FormDropdown
+                          isOpen={isDropdownOpen}
+                          onClose={closeDropdown}
+                        />
+                      )}
                     </div>
                   </th>
                 ))}
@@ -108,7 +121,9 @@ const UserTable = () => {
                 <React.Fragment key={user.details.id}>
                   <tr className="hover:bg-gray-50 p-5 space-y-4">
                     <td className="p-4">{user?.details.organization}</td>
-                    <td className="p-4 text-nowrap">{user?.details.username}</td>
+                    <td className="p-4 text-nowrap">
+                      {user?.details.username}
+                    </td>
                     <td className="p-4">{user?.details.email}</td>
                     <td className="p-4">{user?.details.phonenumber}</td>
                     <td className="p-4 text-nowrap">
@@ -138,7 +153,7 @@ const UserTable = () => {
                       <DropdownMenu
                         options={dropdownOptions}
                         isOpen={openDropdownId === user.details.id}
-                        onClose={closeDropdown} 
+                        onClose={closeDropdown}
                       />
                     </td>
                   </tr>

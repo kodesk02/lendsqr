@@ -275,7 +275,7 @@ const UserDetails = () => {
                     MONTHLY INCOME
                   </span>
                   <span className="text-[16px] font-medium  ">
-                    {edu.monthlyincome}{" "}
+                    {formatCurrency(edu.monthlyincome)}{" "}
                   </span>
                 </div>
               </div>{" "}

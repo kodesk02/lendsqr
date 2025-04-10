@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Card from "@/components/Cards";
 import React from "react";
-import UserTable from "./user/UserTable";
+import UserTable from "./user/page";
 
 interface CardProps {
   title: string;

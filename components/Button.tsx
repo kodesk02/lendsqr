@@ -3,7 +3,7 @@ import { cn } from "../utils/cn";
 interface ButtonProps {
   text: string;
   onClick?: () => void;
-  variant: "primary" | 'transparent';
+  variant: "primary" | "transparent" | "red" | "neutral";
   size?: "sm" | "md" | "lg";
   disabled?: boolean;
   className?: string;
@@ -29,8 +29,12 @@ export default function Button({
         {
           "bg-[var(--primary)] text-white hover:bg-[var(--royalblue)]":
             variant === "primary",
-          'bg-transparent border-1 border-[var(--gray)] text-[var(--gray)]':
-            variant === 'transparent'
+          "bg-transparent border-1 border-[var(--gray)] text-[var(--gray)]":
+            variant === "transparent",
+          "bg-transparent border-1 border-red-600 text-red-600":
+            variant === "red",
+          "bg-transparent border-1 border-[var(--primary)] text-[var(--primary)]":
+            variant === "neutral",
         },
         {
           "px-2 py-1 text-sm": size === "sm",
